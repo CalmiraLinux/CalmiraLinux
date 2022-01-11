@@ -45,7 +45,6 @@ export -f pathremove pathprepend pathappend
 # Set the initial path
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin
 
-
 # Setup some environment variables.
 export HISTSIZE=1000
 export HISTIGNORE="&:[bf]g:exit"
@@ -55,7 +54,7 @@ export XDG_DATA_DIRS=${XDG_DATA_DIRS:-/usr/share/}
 export XDG_CONFIG_DIRS=${XDG_CONFIG_DIRS:-/etc/xdg/}
 export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/tmp/xdg-$USER}
 
-# Setup a command promt
+# Setup a command prompt
 PS1='\u:\w\$ '
 
 # Source user files from /etc/profile.d
@@ -73,6 +72,6 @@ export CFLAGS="-O3 -s"
 export CXXFLAGS="-O3 -s"
 
 # makeflags for paralell make
-export MAKEFLAGS=-j$(lscpu  | grep "CPU(s):" | grep -v NUMA | tr -d "CPU(s):                          ")
+#export MAKEFLAGS=-j$(lscpu  | grep "CPU(s):" | grep -v NUMA | tr -d "CPU(s):                          ")
 
 # End /etc/profile

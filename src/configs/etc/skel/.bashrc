@@ -1,4 +1,4 @@
-# .bashrc
+# Begin ~/.bashrc
 #
 # Bash configuration file
 # (C) 2021 Michail Linuxoid85 Krasnov

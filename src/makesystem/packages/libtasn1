@@ -1,9 +1,0 @@
-#!/bin/bash
-
-tar -xf libtasn1-4.17.0.tar.gz
-cd libtasn1-4.17.0
-
-./configure --prefix=/usr --disable-static
-
-make
-make install

@@ -11,9 +11,6 @@ gettext.bindtextdomain('ver', '/usr/share/locale')
 gettext.textdomain('ver')
 _ = gettext.gettext
 
-if os.path.isfile("~/.local/.start"):
-    exit(0)
-
 SYSTEM_INFO = "/etc/calm-release"
 
 if os.path.isfile(SYSTEM_INFO):
@@ -33,7 +30,3 @@ print(_("\tSystem build: {}\n").format(sys_data["distroBuild"]))
 print(_("(C) 2021 Michail Krasnov <linuxoid85@gmail.com> for {0} {1}\n").format(sys_data["distroName"], sys_data["distroVersion"]))
 
 f.close()
-
-f = open("~/.local/.start", "x")
-
-exit(0)

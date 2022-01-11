@@ -1,8 +1,0 @@
-#!/bin/bash
-
-wget https://github.com/CalmiraLinux/calm-bootscripts/raw/master/base/calm-bootscripts.txz
-echo -e "\e[1mДанная версия пакета \e[0m\e[35mbootscripts\e[0m\e[1m оптимизирована для работы в системе с раздельной системой каталогов\e[0m"
-tar -xvf calm-bootscripts.txz
-cd bootscripts
-
-make install

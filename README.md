@@ -59,4 +59,4 @@ Calmira будет полезна для изучения строения Linux
 ## Контакты
 * E-mail разработчика: <linuxoid85@gmail.com>
 * Разработчик ВКонтакте: [@linuxoid85](https://vk.com/linuxoid85)
-* Разработчик в Telegram: [@linuxoid85](t.me/linuxoid85)
+* Разработчик в Telegram: [@linuxoid85](https://t.me/linuxoid85)

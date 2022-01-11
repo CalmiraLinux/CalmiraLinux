@@ -1,9 +1,0 @@
-#!/bin/bash
-
-tar -xf less-590.tar.gz
-cd less-590
-
-./configure --prefix=/usr --sysconfdir=/etc
-
-make
-make install
