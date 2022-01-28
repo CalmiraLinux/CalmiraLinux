@@ -1,7 +1,0 @@
-# Begin /etc/bashrc
-# Written for Calmira LX4 1.1 Linux
-# by Michail Krasnov <linuxoid85@gmail.com>
-
-if [ $(whoami) != "root" ]; then
-    export PATH=/bin:/usr/bin
-fi
