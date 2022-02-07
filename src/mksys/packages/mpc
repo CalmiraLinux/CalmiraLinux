@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+tar -xf mpc-1.2.1.tar.gz
+cd mpc-1.2.1
+
+./configure --prefix=/usr        \
+            --disable-static
+
+make
+make install

@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+tar -xf libcap-2.62.tar.xz
+cd libcap-2.62
+
+sed -i '/install -m.*STA/d' libcap/Makefile
+
+make prefix=/usr lib=lib
+make prefix=/usr lib=lib install
+
+chmod -v 755 /lib/lib{cap,psx}.so.2
+mv -v /lib/libpsx.a /usr/lib
+rm -v /lib/libcap.so
+ln -sfv ../../lib/libcap.so.2 /usr/lib/libcap.so

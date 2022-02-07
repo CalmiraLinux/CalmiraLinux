@@ -1,0 +1,13 @@
+#!/bin/bash -e
+
+tar -xf zlib-ng-2.0.5.tar.gz
+cd zlib-ng-2.0.5
+
+./configure --prefix=/usr --zlib-compat --native
+
+make
+make install
+
+rm -fv /usr/lib/libz.a
+mv -v /usr/lib/libz.so.* /lib
+ln -sfv ../../lib/$(readlink /usr/lib/libz.so) /usr/lib/libz.so

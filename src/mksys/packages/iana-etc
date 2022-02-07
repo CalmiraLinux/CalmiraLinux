@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+tar -xf iana-etc-20220110.tar.gz
+cd iana-etc-20220110
+
+cp services protocols /etc

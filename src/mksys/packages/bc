@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+tar -xf bc-5.2.1.tar.xz
+cd bc-5.2.1
+
+CC=gcc ./configure --prefix=/usr -G -O3
+
+make
+make install
