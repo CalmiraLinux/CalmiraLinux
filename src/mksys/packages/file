@@ -1,9 +1,0 @@
-#!/bin/bash -e
-
-tar -xf file-5.41.tar.gz
-cd file-5.41
-
-./configure --prefix=/usr
-
-make
-make install
