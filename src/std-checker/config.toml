@@ -1,0 +1,162 @@
+[root_fs]
+required_d = [
+    '/bin',
+    '/boot',
+    '/dev',
+    '/etc',
+    '/lib',
+    '/media',
+    '/mnt',
+    '/opt',
+    '/run',
+    '/sbin',
+    '/srv',
+    '/tmp',
+    '/usr',
+    '/var',
+    '/root',
+    '/lib64'
+]
+
+[usr_fs]
+required_d = [
+    '/usr/bin',
+    '/usr/lib',
+    '/usr/local',
+    '/usr/sbin',
+    '/usr/share'
+]
+optional_d = [
+    '/usr/games',
+    '/usr/include',
+    '/usr/libexec',
+    '/usr/lib64',
+    '/usr/src'
+]
+
+[root_bin]
+required_f = [
+    '/bin/cat',
+    '/bin/chgrp',
+    '/bin/chmod',
+    '/bin/chown',
+    '/bin/cp',
+    '/bin/date',
+    '/bin/dd',
+    '/bin/df',
+    '/bin/dmesg',
+    '/bin/echo',
+    '/bin/false',
+    '/bin/hostname',
+    '/bin/kill',
+    '/bin/ln',
+    '/bin/login',
+    '/bin/ls',
+    '/bin/mkdir',
+    '/bin/mknod',
+    '/bin/more',
+    '/bin/mount',
+    '/bin/mv',
+    '/bin/ps',
+    '/bin/pwd',
+    '/bin/rm',
+    '/bin/rmdir',
+    '/bin/sed',
+    '/bin/sh',
+    '/bin/stty',
+    '/bin/su',
+    '/bin/sync',
+    '/bin/true',
+    '/bin/umount',
+    '/bin/uname'
+]
+optional_f = [
+    '/bin/ed',
+    '/bin/tar',
+    '/bin/gzip',
+    '/bin/gunzip',
+    '/bin/zcat',
+    '/bin/ping'
+]
+
+[root_sbin]
+required_f = [
+    '/sbin/shutdown',
+    '/sbin/ldconfig',
+    '/sbin/sln'
+]
+optional_f = [
+    '/sbin/fastboot',
+    '/sbin/fasthalt',
+    '/sbin/fdisk',
+    '/sbin/fsck',
+    '/sbin/getty',
+    '/sbin/halt',
+    '/sbin/ifconfig',
+    '/sbin/init',
+    '/sbin/mkfs',
+    '/sbin/mkswap',
+    '/sbin/reboot',
+    '/sbin/route',
+    '/sbin/swapon',
+    '/sbin/swapoff',
+    '/sbin/update'
+]
+
+[root_dev]
+required_f = [
+    '/dev/null',
+    '/dev/zero',
+    '/dev/tty'
+]
+
+[root_var]
+required_d = [
+    '/var/cache',
+    '/var/lib',
+    '/var/local',
+    '/var/lock',
+    '/var/log',
+    '/var/opt',
+    '/var/run',
+    '/var/spool',
+    '/var/tmp'
+]
+optional_d = [
+    '/var/account',
+    '/var/crash',
+    '/var/games',
+    '/var/mail',
+    '/var/yp'
+]
+
+[usr_bin]
+required_f = []
+optional_f = [
+    'perl',
+    'python',
+    'tclsh',
+    'wish',
+    'expect'
+]
+
+[usr_share]
+required_d = [
+    'man',
+    'misc'
+]
+optional_d = [
+    'color',
+    'dict',
+    'doc',
+    'games',
+    'info',
+    'locale',
+    'nls',
+    'ppd',
+    'sgml',
+    'terminfo',
+    'tmac',
+    'xml',
+    'zoneinfo'
+]
