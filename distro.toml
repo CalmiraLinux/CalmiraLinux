@@ -5,7 +5,7 @@ codename = "Aries"
 description = "Calmira 1.2a2.1 GNU/Linux-libre"
 arch = "x86_64" # x86_64/x86
 build = 5
-build_date = "none"
+build_date = "none" # installed automatically
 edition = "core" # core/extended
 
 [maintainer]
