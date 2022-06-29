@@ -37,11 +37,11 @@ toml::value system_data(const char* config) {
 }
 
 int main() {
-    toml::value start_value = system_data(_FILE);
+    toml::value start_value = system_data(file);
     const auto& system_value = toml::find(start_value, "system");
 
     for(int i = 0; i <= 7; i++) {
-        printf("\033[1m%*s\t\033[0m", 11, params[i]);
+        printf("\033[1m%*s: \033[0m", 11, params[i]);
         std::cout << toml::find<std::string>(system_value, params[i]) << "\n";
     }
     std::cout <<
