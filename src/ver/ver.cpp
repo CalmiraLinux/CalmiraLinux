@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <toml.hpp>
 
 const char* _FILE = "/etc/calm-release";
@@ -26,8 +25,6 @@ int main() {
     for(int i = 0; i <= 7; i++) {
         printf("\033[1m%*s\t\033[0m", 11, params[i]);
         std::cout << toml::find<std::string>(system_value, params[i]) << "\n";
-        /* std::cout << "\033[1m" << params[i] << std::setw(15) << "\033[0m: "; */
-        /* std::cout << toml::find<std::string>(system_value, params[i]) << "\n"; */
     }
     std::cout <<
         "\nCopyright (C) 2021, 2022 Michail Krasnov <linuxoid85@gmail.com>\n";
