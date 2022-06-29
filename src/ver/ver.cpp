@@ -20,7 +20,6 @@ toml::value system_data(const char* config) {
 }
 
 int main() {
-    setlocale(LC_ALL, "ru_RU.UTF-8");
     toml::value start_value = system_data(_FILE);
     const auto& system_value = toml::find(start_value, "system");
 
